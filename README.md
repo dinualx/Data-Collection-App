@@ -20,7 +20,7 @@ class  MetricsApp():
 
 I have defined some instance variables because I need them several times for certain methods.
 In order not to call every time the first method that returned the variable.
-Basically, by the method that returns a certain variable that I need for other methods, I also populated the respective class variable.
+Basically, by the method that returns a certain variable that I need for other methods, I also populated the respective instance variable.
 
     def __init__(self):
         self.average_data = []
@@ -141,7 +141,7 @@ We calculate a variable, collect_number, which will be the number of samples to 
             collect_number= int(value1)//int(value2)
             print('the number of samples for the process is '  + "{}".format(collect_number) + ' and will be taken at an interval of '+ "{}".format(value2) + ' '+ "{}".format(unit2)+ ' during a period of '+ "{}".format(value1) +' '+ "{}".format(unit2))
             
-As I said at the beginning, I populate the self.collect_number class variable, so that I can use it in other methods as well, without further calling
+As I said at the beginning, I populate the self.collect_number instance variable, so that I can use it in other methods as well, without further calling
 again this function, validateTime (), to return it again.
 
             self.collect_number = collect_number
@@ -183,7 +183,7 @@ We will put one by one in the empty list defined at the beginning each process n
                 # Append dict of process name in list
                 listOfProcessNames.append(pInfoDict["name"])
            
-We also populate the self.all_process_names class variable with this list.
+We also populate the self.all_process_names instance variable with this list.
 
                 self.all_process_names = listOfProcessNames
               return (listOfProcessNames)
@@ -342,7 +342,7 @@ We print 4 messages.
             print('the average cpu percent usage for '  +process_name+' process is: '+ "{}".format(average_cpu))
             print('the average descriptors usage for '  +process_name+' process is: '+ "{}".format(average_descriptor))
             
-Also, we populate 4 class variables.
+Also, we populate 4 instance variables.
 
             self.average_memory = average_memory
             self.average_cpu = average_cpu
