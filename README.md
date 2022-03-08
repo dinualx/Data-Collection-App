@@ -141,7 +141,7 @@ We calculate a variable, collect_number, which will be the number of samples to 
             collect_number= int(value1)//int(value2)
             print('the number of samples for the process is '  + "{}".format(collect_number) + ' and will be taken at an interval of '+ "{}".format(value2) + ' '+ "{}".format(unit2)+ ' during a period of '+ "{}".format(value1) +' '+ "{}".format(unit2))
             
-As I said at the beginning, I populate the self.collect_number class variable, so that I can use it in other methods as well, without further ado.
+As I said at the beginning, I populate the self.collect_number class variable, so that I can use it in other methods as well, without further calling
 again this function, validateTime (), to return it again.
 
             self.collect_number = collect_number
