@@ -1,7 +1,7 @@
 Data-Collection-App
 A data collection application that gathers metrics about processes from an OS system
 
-We import this modules.
+We import these modules.
 
 from tkinter import *
 from tkinter import filedialog
