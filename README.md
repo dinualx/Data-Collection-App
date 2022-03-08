@@ -18,7 +18,7 @@ I created a class, MetricsApp ()
 
 class  MetricsApp():
 
-I have defined some class variables because I need them several times for certain methods.
+I have defined some instance variables because I need them several times for certain methods.
 In order not to call every time the first method that returned the variable.
 Basically, by the method that returns a certain variable that I need for other methods, I also populated the respective class variable.
 
