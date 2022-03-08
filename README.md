@@ -341,6 +341,9 @@ We print 4 messages.
             print('the average memory usage in KB for ' +process_name+' process is: '+ "{}".format(average_memory))
             print('the average cpu percent usage for '  +process_name+' process is: '+ "{}".format(average_cpu))
             print('the average descriptors usage for '  +process_name+' process is: '+ "{}".format(average_descriptor))
+            
+Also, we populate 4 class variables.
+
             self.average_memory = average_memory
             self.average_cpu = average_cpu
             self.average_descriptor = average_descriptor
