@@ -413,13 +413,11 @@ We check first if there is average data collected, else we will display an error
             else:
                 logging.error("ERROR: The is no data collected for any process, please collect data for a process first")
 
-
+This is where we create the application main window.
 
         window = Tk()
         window.title("Process metrics collection")
         window.geometry('2000x300')
-
-This is the method to create the application main window.
 
         ######################################################################################
         # On column 0 we have info related to process #####################################
