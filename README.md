@@ -32,13 +32,13 @@ Basically, by the method that returns a certain variable that I need for other m
         self.processor_name = None
         self.collect_number = None
 
-This, startAPP (self), is the only class method in this class.
-Inside it are all the other methods used for the application.
+This, startAPP (self), is the only instance method in this class.
+Inside it are all the other nested methods used for the application.
 
 
     def startAPP(self):
 
-The first method inside the class method is validateTime ().
+The first nested method inside the instance method is validateTime ().
 With its help I take the two time entries from the graphical interface, the total time duration and the sampling interval.
 
         def validateTime():
